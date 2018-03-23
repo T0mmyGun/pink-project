@@ -1,55 +1,242 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="js">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Pink</title>
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="app/css/style.css">
   </head>
   <body class="page">
-  	<div class="page__wrapper">
+
+
 	<header class="page__header">
-		<img src="#" title="logo" width="10" height="10">
-		<nav class="page__navigation menu">
-			<ul class="navigation-list">
-				<li class="menu-item"> </li>
-				<li class="menu-item"> </li>
-				<li class="menu-item"> </li>
-				<li class="menu-item"> </li>
+      <nav class="page__navigation main-menu main-menu--close">
+      <div class=" main-menu__header">
+      <a class="logo main-menu__logo" href="#" >
+      <img src="app/img/logotype-white-mobile-svg.png" width="75" height="22" title="logo" />
+      </a>
+      <button class="main-menu__button--mobile"><span class="visually-hidden">Открыть меню</span></button>
+    </div>
+      <main class="page__content">
+
+      <div class="main-menu__container">
+			<ul class="main-menu__list main-menu__list--mobile">
+				<li class="main-menu__item">
+          <a class="main-menu__link" href="#">Главная</a>
+        </li>
+				<li class="main-menu__item">
+      <a class="main-menu__link" href="#">Фотографии</a>
+        </li>
+				<li class="main-menu__item">
+        <a class="main-menu__link" href="#">Конкурc</a>
+         </li>
+				<li class="main-menu__item">
+      <a class="main-menu__link" href="#">HTML Academy</a>
+        </li>
 			</ul>
-			<button class="navigation-button">Открыть меню</button>>
+    </div>
 		</nav>
 		</header>
 
-	<section class="promo">
+	<section class="download">
 
-		<p>Взгляните на жизнь иначе!</p>
-		<button class="promo__button button">Скачать приложение</button>
 
-		<ul class="promo__links platforms">
-			<li class="platforms__link platforms__link--apple"><></li>
-			<li class="platforms__link platforms__link--android"></li>
-			<li class="platforms__link platforms__link--windows" ></li>
+		<p class="download__text--tablet">Взгляните на жизнь иначе!</p>
+		<button class="download__button button">Скачать приложение</button>
+
+		<ul class="download__platforms platforms">
+			<li class="platforms__item">
+        <a class="platforms__link platforms__link--apple"><span class="visually-hidden">Скачать для Ios</span></a>
+      </li>
+			<li class="platforms__item">
+      <a class="platforms__link platforms__link--android"><span class="visually-hidden">Скачать для Android</span></a>
+      </li>
+			<li class="platforms__item">
+      <a class="platforms__link platforms__link--windows"><span class="visually-hidden">Скачать для Windows</span></a>
+      </li>
+    </ul>
 
 			<p>
 				Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
 			</p>
 	</section>
 	<section class="offers">
-		<h2 class="visually-hidden">Наши предложения<h2>
-			<p>Устали от серости мегаполиса?</p>
-			<p>Нам есть, что вам предложить!</p>
+    <div class="offers-intro">
+		<h2 class="visually-hidden">Наши предложения</h2>
+			<p class="offers-intro__text">Устали от серости мегаполиса?</p>
+			<p class="offers-intro__text">Нам есть, что вам предложить!</p>
+      </div>
 		<ul class="offers-list">
-			<li class="offers-list__item">Поднимает настроение
+			<li class="offers-list__item"><h3 class="offers-list__title">Поднимает настроение</h3>
 
 Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</li>
-			<li class="offers-list__item">Меняет мир вокруг
+			<li class="offers-list__item"><h3 class="offers-list__title">Меняет мир вокруг</h3>
 
 Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</li>
-			<li class="offers-list__item">Заводит 
-новых друзей
-
+			<li class="offers-list__item"><h3 class="offers-list__title">Заводит новых друзей</h3>
 Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</li>
 		</ul>
 	</section>
-  	</div>
+
+  <section class="proof">
+    <div class="proof__image">
+      <svg></svg>
+    </div>
+    <h2 class="proof__title">Эффект на 24 часа!</h2>
+    <p class="proof__text">Британские ученые провели исследования и доказали,
+что положительный эффект от использования приложения длится целые сутки!</p>
+    <a class="proof__link" href="#">Узнать больше об исследовании</a>
+  </section>
+
+  <section class="reviews">
+
+      <div class="reviews__slider review-slider">
+    <div class="reviews__item review review--1">
+      <blockquote class="review__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>
+      <cite class="review__title">
+          Николай Петров
+      </cite>
+      <p class="review-info">
+        25 лет, водитель трамвая
+      </p>
+    </div>
+
+    <div class="reviews__item review review--1">
+      <blockquote class="review__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>
+      <cite class="review__title">
+          Николай Петров
+      </cite>
+      <p class="review-info">
+        25 лет, водитель трамвая
+      </p>
+    </div>
+
+    <div class="reviews__item review review--1">
+      <blockquote class="review__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>
+      <cite class="review__title">
+          Николай Петров
+      </cite>
+      <p class="review-info">
+        25 лет, водитель трамвая
+      </p>
+    </div>
+
+    <a class="review-slider__control review-slider__control--left" href="#">
+      <span class="visually-hidden">Предыдущий отзыв</span>
+    </a>
+     <a class="review-slider__control review-slider__control--right" href="#">
+      <span class="visually-hidden">Следующий отзыв</span>
+    </a>
+
+  <div class="review-slider__pagination pagination">
+      <a class="pagination__control pagination__control--active" href="#"></a>
+      <a class="pagination__control" href="#"></a>
+      <a class="pagination__control" href="#"></a>
+      <a class="pagination__control" href="#"></a>
+  </div>
+  </div>
+  </section>
+
+
+  <section class="price">
+  <table class="price-list">
+    <tr>
+      <td class="price-list__header price-list__header--none">
+      </td>
+      <td class="price-list__header price-list__header">
+        <h3 class="price-list__title">База</h3>
+        <p class="price-list__cost>">1,99 USD</p>
+      </td>
+      <td class="price-list__header price-list__header">
+         <h3 class="price-list__title">Стандарт</h3>
+        <p class="price-list__cost>">3,99 USD</p>
+      </td>
+      <td class="price-list__header price-list__header--none">
+        <h3 class="price-list__title">Анлим</h3>
+        <p class="price-list__cost>">3,99 USD</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="price-list__service">Розовый фильтр</td>
+      <td class="price-list__info price-list__info--yes"></td>
+      <td class="price-list__info price-list__info--yes"></td>
+      <td class="price-list__info price-list__info--yes"></td>
+    </tr>
+     <tr>
+      <td class="price-list__service">Смайлики</td>
+      <td class="price-list__info price-list__info--no"></td>
+      <td class="price-list__info price-list__info--yes"></td>
+      <td class="price-list__info price-list__info--yes"></td>
+    </tr>
+     <tr>
+      <td class="price-list__service">Комментарии</td>
+      <td class="price-list__info price-list__info--no"></td>
+      <td class="price-list__info price-list__info--no"></td>
+      <td class="price-list__info price-list__info--yes"></td>
+    </tr>
+  </table>
+  </section>
+
+  <section class="contacts">
+    <p class="contacts__intro">
+      Остались вопросы?<br>Свяжитесь с нами!
+    </p>
+    <div class="contacts__container">
+      <div class="contacts-item">
+        <h2 class="contacts-item__title">Звоните:</h2>
+        <p class="contacts-item__contact">+7 (812) 555-66-66</p>
+    </div>
+
+    <div class="contacts__container">
+      <div class="contacts-item">
+        <h2 class="contacts-item__title">Приезжайте в гости:</h2>
+        <p class="contacts-item__contact">ул. Большая
+Конюшенная, 19/8</p>
+    </div>
+
+    <div class="contacts__container">
+      <div class="contacts-item">
+        <h2 class="contacts-item__title">Пишите:</h2>
+        <p class="contacts-item__contact">mail@htmlacademy.ru</p>
+    </div>
+  </section>
+
+  <section class="map"></section>
+</main>
+  <footer class="page-footer">
+    <div class="page-footer__item logo logo--footer"></div>
+    <div class="page-footer-item social">
+      <ul class="social__list">
+        <li class="social__link social__link--twitter"><span class="visually-hidden">twitter</span></li>
+        <li class="social__link social__link--facebook"><span class="visually-hidden">facebook</span></li>
+        <li class="social__link social__link--youtube"><span class="visually-hidden">youtube</span></li>
+      </ul>
+    </div>
+
+    <div class="page-footer__item html-academy">
+      Разработано:<a class="html-academy__link" href="#"></a>
+    </div>
+  </footer>
+
+
+
+<script>
+   var link = document.querySelector(".main-menu__button--mobile");
+
+   var mainNav = document.querySelector(".main-menu");
+
+
+   document.documentElement
+     .classList.replace('no-js', 'js');
+
+   link.addEventListener("click", function(evt) {
+     evt.preventDefault();
+     mainNav.classList.toggle("main-menu--close");
+     mainNav.classList.toggle("main-menu--open");
+     arrival_date.focus();
+
+   });
+   </script>
   </body>
 </html>
