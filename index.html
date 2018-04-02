@@ -10,11 +10,18 @@
   <body class="page">
 
 
+
+
+
 	<header class="page__header">
       <nav class="page__navigation main-menu main-menu--close">
       <div class=" main-menu__header">
       <a class="logo main-menu__logo" href="#" >
-      <img src="app/img/logotype-white-mobile-svg.png" width="75" height="22" title="logo" />
+        <picture>
+            <source media="(min-width: 1200px)" srcset="app/img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="app/img/logo-pink-white-tablet.svg">
+            <img src="app/img/logo-pink-white-mobile.svg" alt="Pink">
+           </picture>
       </a>
       <button class="main-menu__button--mobile"><span class="visually-hidden">Открыть меню</span></button>
     </div>
@@ -92,8 +99,10 @@
   <section class="reviews">
 
       <div class="reviews__slider review-slider">
-    <div class="reviews__item review review--1">
-      <blockquote class="review__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>
+        <div class="review-slider__container">
+
+    <div class="reviews__item review review--visible">
+      <blockquote class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
       <cite class="review__title">
           Николай Петров
       </cite>
@@ -121,7 +130,7 @@
         25 лет, водитель трамвая
       </p>
     </div>
-
+  </div>
     <a class="review-slider__control review-slider__control--left" href="#">
       <span class="visually-hidden">Предыдущий отзыв</span>
     </a>
@@ -131,7 +140,6 @@
 
   <div class="review-slider__pagination pagination">
       <a class="pagination__control pagination__control--active" href="#"></a>
-      <a class="pagination__control" href="#"></a>
       <a class="pagination__control" href="#"></a>
       <a class="pagination__control" href="#"></a>
   </div>
