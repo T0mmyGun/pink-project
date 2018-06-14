@@ -4,8 +4,10 @@
   "description": "* Студент: [Стрелков Артем]. * Наставник: `Unknown`.",
   "main": "Gulpfile.js",
   "dependencies": {
+    "autoprefixer": "^8.6.0",
+    "gulp": "^3.9.1",
     "gulp-less": "^4.0.0",
-    "gulp": "^3.9.1"
+    "postcss": "^6.0.22"
   },
   "devDependencies": {
     "autoprefixer": "^8.0.0",
